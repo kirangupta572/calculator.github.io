@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="calc.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <title>Calculator</title>
+</head>
+
+<body>
+  <div class="container calc">
+
+  <div class="container-fluid mx-auto ">
+    <div class="mx-auto text-secondary font-weight-lighter" style="width:160px">
+      <h5>Simple Calculator</h5></div>
+      <div style="width:330px" class="mx-auto bg-dark jumbotron">
+      <div class="input-group input-group-sm col-xs-12">
+        <input class="col-xs-12 form-control text-xs-right rounded-0" id="calcscreen" type="text" />
+      </div>
+      <div class="input-group input-group-lg col-xs-12 p-a-0">
+        <input class="form-control text-xs-right rounded-0" placeholder="0" id="numberscreen" type="text" />
+      </div><br>
+      <div class="d-flex flex-wrap bg-white ">
+        <div class="d-flex flex-wrap col-xs-7 calc__clearpad p-a-1 m-t-2">
+          <button class="btn btn-lg btn-danger col-xs-4 numbers w-25 rounded-0" id="ce" type="button">AC</button>
+          <button class="btn btn-lg btn-danger col-xs-4 numbers w-25 rounded-0" id="c" type="button">C</button>
+          <button class="btn btn-lg bg-white col-xs-4 numbers" id="±" type="button"> ±</button>
+          <button class="btn btn-lg bg-white col-xs-4 numbers w-25" func="." type="button">.</button>
+        </div>
+
+        <div class="d-flex flex-wrap col-xl-offset-4 calc__numberpad p-a-0">
+          <button class="btn btn-lg bg-white col-xs-4 numbers " func="7" type="button">7</button>
+          <button class="btn btn-lg bg-white col-xs-4 numbers " func="8" type="button">8</button>
+          <button class="btn btn-lg bg-white col-xs-4 numbers " func="9" type="button">9</button>
+          <button class="btn btn-lg bg-white col-xs-6 operator" func="/" type="button">/</button>
+          <button class="btn btn-lg bg-white col-xs-6 operator w-25" func="%" type="button">%</button>
+          <button class="btn btn-lg bg-white col-xs-4 numbers " func="4" type="button">4</button>
+          <button class="btn btn-lg bg-white col-xs-4 numbers " func="5" type="button">5</button>
+          <button class="btn btn-lg bg-white col-xs-4 numbers " func="6" type="button">6</button>
+          <button class="btn btn-lg bg-white col-xs-6 operator" func="*" type="button">* </button>
+          <button class="btn btn-lg bg-white col-xs-6 operator w-25" func="+" type="button">+ </button>
+          <button class="btn btn-lg bg-white col-xs-4 numbers" func="1" type="button">1</button>
+          <button class="btn btn-lg bg-white col-xs-4 numbers" func="2" type="button">2</button>
+          <button class="btn btn-lg bg-white col-xs-4 numbers" func="3" type="button">3</button>
+          <button class="btn btn-lg bg-white btn-lg col-xs-6" id="squareroot" func="√" type="button">√</button>
+          <button class="btn btn-lg bg-white col-xs-6 operator w-25" func="-" type="button">- </button>
+          <button class="btn btn-lg bg-white col-xs-8 numbers w-25" func="0" type="button">0 </button>
+          <button class="btn btn-lg bg-white col-xs-12 numbers w-25" id="ans" type="button"> ANS </button>
+          <button class="btn btn-lg btn-primary col-xs-12 rounded-0 w-50" id="equals" func="=" type="button"> =</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="row">
+
+    </div>
+  </div>
+  <script src="calc.js"></script>
+
+</body>
+
+</html>
